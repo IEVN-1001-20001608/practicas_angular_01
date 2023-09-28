@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-6">
+        <div class="mb-3">
+            <!--DE C A F-->
+            <div class="mb-3">
+                <h1>convertir °F - °C</h1>
+                <label for="grado" class="form-label">grado1</label>
+                <input type="text" [(ngModel)]="grado" class="from-control" name="grad1" placeholder="grado1">
+            </div>
+            <div class="mb-3">
+                <button (click)="operacion()" class="btn-primary">Generar</button>
+            </div>
+            <div>
+                <label>Celsius<input [(ngModel)]="radioButton" type="radio" name="operacion" value="5"></label><br>
+                <label>Fahrenheit<input [(ngModel)]="radioButton" type="radio" name="operacion" value="6"></label><br>
+                <h2>Resultado: {{res}}</h2>
+            </div>
+        </div>
