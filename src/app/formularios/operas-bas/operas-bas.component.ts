@@ -10,7 +10,9 @@ export class OperasBasComponent {
   grado: number = 0;
   cel: number = 0;
   far: number = 0;
-  res: number = 0;
+  res = 0;
+  num1=0;
+  num2=0;
 
   radioButton: string = '';
 
@@ -24,7 +26,9 @@ export class OperasBasComponent {
     else if (this.radioButton == "6") {
       this.res = ((this.grado - 32) * 5 / 9);
     }
-
+  }
+  sumar(){
+    this.res=this.num1+this.num2;
   }
 
 }

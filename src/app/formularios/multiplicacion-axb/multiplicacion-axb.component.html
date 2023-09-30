@@ -1,0 +1,24 @@
+<div class="d-flex">
+    <div class="container">
+        <h1>Multiplicación de A*B Utilizando sumas</h1>
+        <div class="d-flex">
+            <mat-form-field>
+                <input matInput [(ngModel)]=num1 type="number" placeholder="Numer">
+            </mat-form-field><br>
+            <p>El numero ingresado es {{num1}}</p>
+        </div>
+        <div class="d-flex">
+            <mat-form-field>
+                <input matInput [(ngModel)]=num2 type="number" placeholder="Numer">
+            </mat-form-field><br>
+            <p>El Segundo numero ingresado es {{num2}}</p>
+        </div>
+        <div class="d-flex">
+            <button mat-raised-button color="primary" (click)="sumar()">Calcular</button>
+            <div class="container">
+                <p>La suma es: {{res}}</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
