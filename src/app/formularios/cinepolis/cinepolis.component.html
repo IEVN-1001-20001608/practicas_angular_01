@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinepolis</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo"><i>Cinepolis</i></h1>
+    <!--Entrada-->
+        <div class="entrada">
+            <h2>Entradas</h2>
+            <hr class="uno">
+        </div>
+        <div class="entradas">
+            <div class="mat-field">
+                <mat-label>Nombre</mat-label>
+                <input class="input">
+            </div>
+            <div class="mat-field">
+                <mat-label>Cantidad Compradores</mat-label>
+                <input class="input" matInput [(ngModel)]="numa" type="number">
+            </div>
+            <div class="mat-field">
+                <mat-label>Tarjeta Cineco</mat-label>
+                <input type="radio" [(ngModel)]="tja" name="tarjeta" value="si"><label class="form-label">si</label>
+                <input type="radio" [(ngModel)]="tja" name="tarjeta" value="no"><label class="form-label">no</label>
+            </div>
+            <div class="mat-field">
+                <mat-label>Cantidad de Boletos</mat-label>
+                <input class="input" matInput [(ngModel)]="numb" type="number" placeholder="Cabol">
+            </div>
+        </div>
+    </div>
+    <!--Salida-->
+    <div class="sal">
+        <h2>Salidas</h2>
+        <hr class="dos">
+    </div>
+    <div class="salidas">
+        <p class="letra">Total a pagar</p>
+        <div class="resultado">
+            <font color="black">{{total}}</font>
+        </div>
+    </div>
+    <!--Acciónes-->
+    <div class="an">
+        <div class="ac">
+            <h2>Acciones</h2>
+            <hr class="tres">
+        </div>
+    </div>
+    <button class="p" mat-raised-button color="primary" (click)="calculartotal()">Procesar</button>
+    <button class="s" mat-raised-button color="warn">Salir</button>
+</body>
+</html>
